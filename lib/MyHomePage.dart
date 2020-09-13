@@ -21,9 +21,14 @@ class _MyHomePageState extends State<MyHomePage> {
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,
           childAspectRatio: 3 / 2,
-          crossAxisSpacing: 20,
+          crossAxisSpacing: 10,
           mainAxisSpacing: 20,
         ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {},
       ),
     );
   }

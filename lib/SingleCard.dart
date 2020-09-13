@@ -22,15 +22,17 @@ class _SingleCardState extends State<SingleCard> {
         },
         child: Card(
           color: Colors.amber,
-          child: Expanded(
-            child: ConstrainedBox(
-              constraints: BoxConstraints(),
+          child: ConstrainedBox(
+            constraints: BoxConstraints(),
+            child: Padding(
+              padding: EdgeInsets.all(5),
               child: Text(
                 'Inside of caradsadasdsadasdasdasdasdadsadsadasddasd',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 24,
                 ),
+                overflow: TextOverflow.fade,
               ),
             ),
           ),
